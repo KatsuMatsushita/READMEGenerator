@@ -1,0 +1,22 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "A Readme Generator that turns user answers into a readme file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatsuMatsushita/READMEGenerator.git"
+  },
+  "author": "Katsunori Matsushita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatsuMatsushita/READMEGenerator/issues"
+  },
+  "homepage": "https://github.com/KatsuMatsushita/READMEGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.1.2"
+  }
+}
