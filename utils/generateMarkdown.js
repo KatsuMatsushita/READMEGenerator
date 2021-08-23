@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
     case "ISC":
       return "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
     default:
-      return "" 
+      return ""; 
   };
 }
 
@@ -30,7 +30,7 @@ function renderLicenseLink(license) {
     case "ISC":
       return "https://opensource.org/licenses/ISC";
     default:
-      return "" 
+      return "";
   };
 }
 
@@ -52,47 +52,46 @@ function renderLicenseSection(license) {
 
       THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.`;
     default:
-      return "" 
+      return "";
   };
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-  # Table of Contents
-  1. [Description](#description)
-  2. [Installation Instructions](#install)
-  3. [Usage](#usage)
-  4. [Test Instructions](#test)
-  5. [Contribution Guidelines](#contribution)
-  6. [License](#license)
-  7. [Questions](#questions)
+# Table of Contents
+1. [Description](#description)
+2. [Installation Instructions](#install)
+3. [Usage](#usage)
+4. [Test Instructions](#test)
+5. [Contribution Guidelines](#contribution)
+6. [License](#license)
+7. [Questions](#questions)
 
-  ## Description <a name="description"></a>
-  ${data.desc}
+## Description <a name="description"></a>
+${data.desc}
 
-  ## Installation Instructions <a name="install"></a>
-  ${data.install}
+## Installation Instructions <a name="install"></a>
+${data.install}
 
-  ## Usage <a name="usage"></a>
-  ${data.usage}
+## Usage <a name="usage"></a>
+${data.usage}
 
-  ## Test Instructions <a name="test"></a>
-  ${data.test}
+## Test Instructions <a name="test"></a>
+${data.test}
 
-  ## Contribution Guidelines <a name="contribution"></a>
-  ${data.contribution}
+## Contribution Guidelines <a name="contribution"></a>
+${data.contribution}
 
-  ## License <a name="license"></a>
-  ${data.license} ${renderLicenseLink(data.license)}
-  ${renderLicenseSection(data.license)}
+## License <a name="license"></a>
+${data.license} ${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license)}
 
-  ## Questions <a name="questions"></a>
-  ${data.username}
-  ${data.email}
-`;
+## Questions <a name="questions"></a>
+${data.username}
+${data.email}`;
 }
 
 module.exports = generateMarkdown;
