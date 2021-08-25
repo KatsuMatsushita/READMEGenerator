@@ -54,5 +54,7 @@ A short and simple permissive license with conditions only requiring preservatio
 
 ## Questions <a name="questions"></a>
 GitHub name: KatsuMatsushita
+
 [GitHub Profile](https://github.com/KatsuMatsushita)
+
 To contact me, drop an email to: katsu.matsushita@gmail.com
