@@ -56,7 +56,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     // this passes the data object (the answers from the inquirer prompt) to the function to generate the markdown file
-    fs.writeFile(`${fileName}.md`, generateMarkdown(data), (err) =>
+    fs.writeFile(`./results/${fileName}.md`, generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log("README File has been generated.")
     );
 }
