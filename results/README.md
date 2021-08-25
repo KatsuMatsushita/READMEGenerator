@@ -1,4 +1,4 @@
-# Readme Generator
+# README Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Table of Contents
@@ -11,7 +11,7 @@
 7. [Questions](#questions)
 
 ## Description <a name="description"></a>
-Generate a README file
+A README generator that takes input from prompts to generate a markdown file.
 
 ## Installation Instructions <a name="install"></a>
 1. Clone the project from the main branch of the repository to the local filesystem
@@ -27,7 +27,6 @@ Generate a README file
 6. enter the information to answer the question, either typing it or pasting it from another editor, then save and close the editor
 7. once all questions have been answered, a README.md file will be placed in the results folder
 8. upload the README.md file to the repository for which you created the README file
-
 
 ## Test Instructions <a name="test"></a>
 1. Open Gitbash, and navigate to the folder where the project has been cloned
@@ -48,5 +47,7 @@ A short and simple permissive license with conditions only requiring preservatio
 
 ## Questions <a name="questions"></a>
 GitHub name: KatsuMatsushita
-[![GitHub Profile](https://github.com/KatsuMatsushita)
+
+[GitHub Profile](https://github.com/KatsuMatsushita)
+
 To contact me, drop an email to: katsu.matsushita@gmail.com
