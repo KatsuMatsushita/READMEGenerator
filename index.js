@@ -66,7 +66,7 @@ function init() {
     // start inquirer prompts to get answers from the user
     inquirer.prompt(questions)
     .then((answer) => {
-        writeToFile(answer.title, answer);
+        writeToFile("README", answer);
     });
 }
 
