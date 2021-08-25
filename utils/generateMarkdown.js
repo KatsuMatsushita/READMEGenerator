@@ -91,7 +91,9 @@ ${renderLicenseSection(data.license)}
 
 ## Questions <a name="questions"></a>
 GitHub name: ${data.username}
-[![GitHub Profile](https://github.com/${data.username})
+
+[GitHub Profile](https://github.com/${data.username})
+
 To contact me, drop an email to: ${data.email}`;
 }
 
